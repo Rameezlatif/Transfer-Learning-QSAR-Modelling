@@ -29,7 +29,7 @@ print('Merged data saved to merged_data.csv')
 
 """## **Search for Target protein**
 
-### **Target search for Acetylcholinesterase**
+### **Target search **
 """
 
 # Target search for coronavirus
