@@ -12,7 +12,7 @@ sys.path.append('/usr/local/lib/python3.7/site-packages/')
 
 """## **Load bioactivity data**"""
 
-! wget https://raw.githubusercontent.com/dataprofessor/data/master/acetylcholinesterase_03_bioactivity_data_curated.csv
+
 
 import pandas as pd
 
