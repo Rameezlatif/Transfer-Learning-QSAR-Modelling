@@ -32,14 +32,14 @@ print('Merged data saved to merged_data.csv')
 ### **Target search **
 """
 
-# Target search for coronavirus
+# Target search
 
 target = new_client.target
 target_query = target.search('CHEMBL3038499')
 targets=pd.DataFrame.from_dict(target_query)
 targets
 
-"""### **Select and retrieve bioactivity data for *Human Acetylcholinesterase* (first entry)**
+"""### **Select and retrieve bioactivity data for 
 
 We will assign the fifth entry (which corresponds to the target protein, *Human Acetylcholinesterase*) to the ***selected_target*** variable
 """
@@ -50,7 +50,7 @@ selected_target= 'merged_data.csv'
 
 selected_target
 
-"""Here, we will retrieve only bioactivity data for *Human Acetylcholinesterase* (CHEMBL220) that are reported as pChEMBL values."""
+"""Here, we will retrieve only bioactivity data for target that are reported as pChEMBL values."""
 
 #activity= new_client.activity
 res= activity.filter(target_chembl_id=selected_target).filter(standard_type="IC50")
